@@ -1,0 +1,24 @@
+
+.selectbox {
+    width: 15px;
+}
+
+.CSSTableGenerator td a {
+    font-size: 12pt;
+}
+
+a.button-style3 span {
+    background: url(/images/green-menu.png) no-repeat 50% 0px;
+    text-shadow: #000 0px 0px 0px;
+}
+a.button, a.button span {
+    background: url(/images/green-menu.png) no-repeat 50% 0px;
+}
+
+h4 {
+    text-align: center;
+}
+
+select.month {
+    width: 20px;
+}

@@ -1,0 +1,19 @@
+
+h2 {
+    text-transform: none;
+}
+
+.deliveryaddress {
+    border: 1px;
+    font: courier;
+    font-size: 11px;
+}
+
+strong {
+    font-style: italics;
+}
+
+.important {
+    color: #cc6666;
+    font-weight: bold;
+}

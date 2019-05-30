@@ -1,0 +1,50 @@
+#feedback {
+    height: 33px;
+    margin: 0px 0px 20px 0px;
+}
+
+#feedback form {
+    margin: 0px;
+    padding: 0px;
+}
+
+#feedback fieldset {
+    margin: 0px;
+    padding: 7px;
+    border: 0;
+}
+
+#q {
+    width: 160px;
+    background: none;
+    border: 0;
+    outline: none;
+    font: 14px/14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#fbtext {
+    width: 40em;
+    background: none;
+    border: 1;
+    outline: none;
+    font: 14px/14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#feedback input {
+    color: #333333;
+}
+
+#feedback input.blank {
+    /*color: #979F47;*/
+    color: #dcdfbb;
+}
+
+#feedback #go {
+    display: none;
+}
+
+#stardesc {
+    font: 9px/9px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*background-color: #eee;*/
+}

@@ -1,0 +1,14 @@
+/** LISTS STYLE 7 */
+
+.list-style7 li {
+	line-height: 1px;
+}
+
+.list-style7 .info h3 {
+	margin-bottom: 20px;
+}
+
+.list-style1 li.first-list {
+	overflow: hidden;
+	margin-top: -10px;
+}

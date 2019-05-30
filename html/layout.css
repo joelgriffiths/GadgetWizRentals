@@ -1,0 +1,64 @@
+/** WRAPPER */
+
+#wrapper {
+}
+
+/** HEADER */
+
+#header {
+}
+
+/** LOGO */
+
+#logo {
+	position: relative;
+	float: left;
+	width: 260px;
+	height: 48px;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+	text-indent: -9999em;
+}
+
+#logo h1 a {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	width: 100%;
+	height: 100%;
+	/*background: url(/images/homepage_02.jpg) no-repeat left top;*/
+	/*background: url(/images/zalaxy-small.png) no-repeat left top;*/
+	/*background: url(/images/zalaxy-slash-logo-small.png) no-repeat left top;*/
+	/*background: url(/images/GadgetWiz-logo-small.png) no-repeat left top;*/
+	/*background-size: 60%;*/
+
+}
+
+/** MENU */
+
+#menu {
+}
+
+/** PAGE */
+
+#page {
+}
+
+/** CONTENT */
+
+#content {
+}
+
+/** SIDEBAR */
+
+#sidebar {
+}
+
+/** FOOTER */
+
+#footer {
+}

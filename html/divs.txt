@@ -1,0 +1,38 @@
+<div id="header-bg">
+	<div id="header" class="container">
+		<div id="logo"> </div>
+		<div id="menu"> </div>
+	</div>
+</div>
+
+<div id="page-bg">
+	<div id="page" class="container">
+		<!--div id="wide-content"-->
+		<div id="wide-content">
+        		<div class="box-style2">
+                		<div class="content"> </div>
+        		</div>
+	        	<div class="box-style4">
+                		<div class="t"></div>
+                		<div class="content"> <div>
+
+				<div id="stylized" class="myform">
+  					<div id="ack"></div>
+				</div>
+                	</div>
+               		<div class="b"></div>
+       		</div>
+	</div>
+		<!--/div-->
+</div>
+</div>
+<div id="footer-bar-bg">
+        <div id="footer-bar" class="container">
+                <div class="col1">
+                </div>
+                <div class="col2">
+                </div>
+        </div>
+</div>
+<div id="footer">
+</div>

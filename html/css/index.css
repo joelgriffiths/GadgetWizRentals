@@ -1,0 +1,18 @@
+#box1 p.text {
+    width: 575px;
+    clear: both;
+    margin-top: 0px;
+}
+#box1 p.ftext {
+    width: 575px;
+    clear: both;
+    margin-top: 0px;
+}
+
+#box1 p.small a {
+    width: 575px;
+    clear: both;
+    margin: 0px 0px 0px 20px;
+    font-size: 80%;
+    text-decoration: none;
+}

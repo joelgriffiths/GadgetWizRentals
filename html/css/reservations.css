@@ -1,0 +1,84 @@
+@import url("profile.css");
+
+.selectbox {
+    width: 15px;
+}
+
+.CSSTableGenerator td a {
+    font-size: 10pt;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.CSSTableGenerator td {
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+a.button-style3 span {
+    background: url(/images/white-menu.png) no-repeat 50% 0px;
+    text-shadow: #000 0px 0px 0px;
+}
+a.button, a.button span {
+    font: 21px/33px Georgia, "Times New Roman", Times, serif;
+    color: #F70;
+    background: url(/images/white-menu.png) no-repeat 50% 0px;
+}
+
+h4 {
+    text-align: center;
+}
+
+select.month {
+    width: 20px;
+}
+
+h2 {
+    text-transform: none;
+}
+
+.deliveryaddress {
+    border: 1px;
+    font: courier;
+    font-size: 11px;
+}
+
+strong {
+    font-style: italics;
+}
+
+.important {
+    color: #cc6666;
+    font-weight: bold;
+    text-align: center;
+}
+
+td.pickup, td.return {
+    text-align: center;
+    font-size: 14px;
+}
+
+.fbcomplete {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: #373;
+}
+
+.fbwaiting  {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+a.waiting  {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: #a55;
+}
+
+
+
+

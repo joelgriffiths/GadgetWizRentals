@@ -1,0 +1,26 @@
+<!--?php 
+else :
+$usr = new Users; //create a new instance of the Users class
+$usr->storeFormValues( $_POST ); //like I said before we will use the function storeFormValues to store the form values
+endif;
+
+if( $usr->userLogin() ) {
+echo "Welcome"; 
+} else {
+echo "Incorrect Username/Password"; 
+}
+}
+?-->
+</div>
+        <p class="copyright">Last modified on June 28, 2013 | <span class="name">Zalaxy</span> | &copy; 2013 - Joel Griffiths
+
+<?php if(isset($valid)) :?>
+- <a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0!</a>
+<?php endif;?>
+        </p>
+<!-- For IE big -->
+<p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+</body>
+</html>
+

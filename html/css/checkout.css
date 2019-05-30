@@ -1,0 +1,75 @@
+
+.selectbox {
+    width: 15px;
+}
+
+.intervalprice {
+    width: 75px;
+}
+.itemtitle {
+    width: 250px;
+}
+
+.CSSTableGenerator td {
+    font-size: 11pt;
+}
+.CSSTableGenerator td a {
+    font-size: 12pt;
+}
+
+a.button-style3 span {
+    background: url(/images/green-menu.png) no-repeat 50% 0px;
+    text-shadow: #000 0px 0px 0px;
+}
+a.button, a.button span {
+    background: url(/images/green-menu.png) no-repeat 50% 0px;
+}
+
+h4 {
+    text-align: center;
+}
+
+input.date {
+    width: 70px;
+}
+select.time {
+    text-align: left;
+    width: 70px;
+}
+input.smallint {
+    width: 30px;
+}
+
+select.day {
+    width: 50px;
+}
+select.year {
+    width: 70px;
+}
+
+select#deliveryoptions {
+    width: 150px;
+}
+
+#deliveryaddress {
+    clear: both;
+    display: none;
+}
+#costate, #cozip{
+width: 100px;
+}
+
+#deliveryaddress span{
+    clear: left;
+    float: left;
+    width: 50px;
+}
+
+#deliveryaddress input, select{
+    margin-left: 10px;
+}
+
+#deliveryaddress#b {
+    clear: both;
+}
+

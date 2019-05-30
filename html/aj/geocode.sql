@@ -1,0 +1,15 @@
+create table geocode (
+Zipcode char(5),
+ZipCodeType varchar(12),
+City varchar(24),
+State char(2),
+LocationType varchar(12),
+Lat float(8,4),
+Lon float(8,4),
+Location varchar(20),
+Decommisioned int(1),
+TaxReturnsFiled INT(11),
+EstimatedPopulation INT(11),
+TotalWages INT(11),
+PRIMARY KEY (`Zipcode`),
+KEY (`City`, `State`)) ENGINE=InnoDB DEFAULT CHARSET=utf8

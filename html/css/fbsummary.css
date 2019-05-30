@@ -1,0 +1,9 @@
+@import url("profile.css");
+
+td.timestamp {
+    text-align: center;
+}
+
+.box-style9 {
+    margin: 0px 0px 0px 150px;
+}

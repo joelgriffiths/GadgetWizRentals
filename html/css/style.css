@@ -1,0 +1,344 @@
+/* Css RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* Styling the Header */
+header#head {
+background-color:#333333;
+height: 40px;
+width: 100%;
+}
+
+header div#header-left {
+    width: 202px;
+    float: left;
+}
+
+header #logo_container {
+    float: left;
+    margin-left: 75px;
+}
+
+header div#header-right {
+    float: left;
+    width: 758px;
+}
+
+header .help-phone {
+    text-align: right;
+    color: rgb(204, 204, 204);
+    border-right: medium none;
+        border-right-width-value: medium;
+        border-right-style-value: none;
+        border-right-color-value: -moz-use-text-color;
+        border-right-width-ltr-source: physical;
+        border-right-width-rtl-source: physical;
+        border-right-style-ltr-source: physical;
+        border-right-style-rtl-source: physical;
+        border-right-color-ltr-source: physical;
+        border-right-color-rtl-source: physical;
+    font-size: 15px;
+    line-height: 1;
+    padding: 10px 20px 0px 0px;
+        padding-top: 10px;
+        padding-right-value: 20px;
+        padding-bottom: 0px;
+        padding-left-value: 0px;
+        padding-left-ltr-source: physical;
+        padding-left-rtl-source: physical;
+        padding-right-ltr-source: physical;
+        padding-right-rtl-source: physical;
+}
+
+header#head p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+color:#999;
+font-weight: bold;
+padding: 12px;
+}
+
+header#head p #register {
+float: right;
+margin-top: -20px;
+    margin-right: 75px;
+}
+
+header#head a:hover #register {
+color:#999;
+}
+
+header#head p a {
+color:#ccc;
+}
+
+/* Styling the main wrapper */
+/*width: 100%; */
+/*height: 100%;*/
+#container {
+    margin: 0px auto;
+    height: auto !important;
+    background: -moz-linear-gradient(center top , rgb(126, 174, 53) 0px, rgb(109, 154, 47) 51%, rgb(90, 127, 39) 85%) repeat scroll 0px 0px rgb(125, 174, 53);
+
+    /*background: -webkit-gradient(linear, left bottom, right top, from(green), to(yellow));*/
+}
+
+#contentdiv {
+    padding-bottom: 20px;
+    background: blue;
+}
+
+.container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    background: #933;
+}
+.container_12 .grid_12 {
+    width: 940px;
+}
+
+.container_12 .grid_8 {
+    width: 620px;
+}
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navigation
+{
+	float: left;
+	width: 100%;
+	background: #333;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#navigation li a:hover { background: #383; }
+
+#mainnav {
+	float: right;
+	width: 165px;
+	background: #cF3;
+}
+
+#menu
+{
+	float: right;
+	width: 165px;
+	background: #6F9;
+}
+
+#contents
+{
+	float: left;
+	width: 440px;
+	background: #9FC;
+	margin: 0 0 0 20px;
+	display: inline;
+}
+
+#footer
+{
+	clear: both;
+	background: #FF9;
+}
+
+/* Styling the login wrapper */
+#login-wrapper {
+margin: 0px auto;
+width: 310px;
+height: 180px;
+padding: 50px 1px 10px 50px;
+margin-top: 150px;
+-moz-box-shadow: 0px 0px 10px #888;
+-o-box-shadow: 0px 0px 10px #888;
+-webkit-box-shadow: 0px 0px 10px #888;
+-moz-border-radius: 10px 10px 10px 10px;
+-o-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#register-wrapper {
+margin: 0px auto;
+width: 310px;
+height: 250px;
+padding: 50px 1px 10px 50px;
+margin-top: 150px;
+-moz-box-shadow: 0px 0px 10px #888;
+-o-box-shadow: 0px 0px 10px #888;
+-webkit-box-shadow: 0px 0px 10px #888;
+-moz-border-radius: 10px 10px 10px 10px;
+-o-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+/* Form height, margin, padding */
+form ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+form ul li {
+	margin: .9em 0 0 0;
+	padding: 0;
+}
+
+form * {
+	line-height: 1em;
+}
+
+/* field labels */
+
+label {
+	clear: left;
+	text-align: right;
+	width: 15%;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 15px;
+	color: #808080;
+}
+
+/* the fields */
+
+input {
+	font-size: .9em;
+}
+
+input {
+	border: 2px solid #666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff;
+}
+
+input {
+	display: block;
+	margin: 0;
+	padding: .4em;
+	width: 80%;
+}
+
+/* Place a border around focused fields */
+
+form *:focus {
+	border: 2px solid #7c412b;
+	outline: none;
+}
+
+/* Display correctly filled-in fields with a green background */
+
+input:valid {
+	background: #efe;
+}
+
+
+
+
+/* Submit buttons */
+
+.buttons {
+	text-align: center;
+	margin: 20px 0 0 -80px;
+}
+
+input[type="submit"], input[type="button"] {
+	display: inline;
+	margin: 0 5px;
+margin-left:20px;
+	width: 10em;
+	padding: 10px;
+	border: 2px solid #7c412b;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	color: #fff;
+	background: #ca5f34;
+	font-weight: bold;
+	-webkit-appearance: none;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active, input[type="button"]:hover, input[type="button"]:active {
+	cursor: pointer;
+	background: #fff;
+	color: #ef7d50;
+}
+
+input[type="button"]:active, input[type="button"]:active {
+	background: #eee;
+	-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+	-webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}

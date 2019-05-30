@@ -1,0 +1,29 @@
+@import url("profile.css");
+
+.selectbox {
+    width: 15px;
+}
+
+.CSSTableGenerator td a {
+    font-size: 10pt;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+a.button-style3 span {
+    background: url(/images/white-menu.png) no-repeat 50% 0px;
+    text-shadow: #000 0px 0px 0px;
+}
+a.button, a.button span {
+    font: 21px/33px Georgia, "Times New Roman", Times, serif;
+    color: #F70;
+    background: url(/images/white-menu.png) no-repeat 50% 0px;
+}
+
+h4 {
+    text-align: center;
+}
+
+select.month {
+    width: 20px;
+}

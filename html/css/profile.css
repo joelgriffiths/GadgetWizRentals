@@ -1,0 +1,96 @@
+/* Used by all the account Menus*/
+
+h1.pmenu {
+ text-align:center;
+}
+
+h1.menu a {
+    background: #f70;
+}
+
+a.topmenu {
+    font: 12px/16px Georgia,"Times New Roman",Times,serif;
+    color: #fff;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #ccc;
+    padding: 5px 5px 5px 5px;
+}
+
+a.active {
+    color: #f70;
+    background: #333;
+}
+
+#account-menu a.active {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+
+.account-menu {
+    width: 918px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6f6f6f;
+    margin-bottom: 10px;
+    background: url(/images/graygrad.png) repeat-x left top;
+}
+
+.account-menu .links {
+    float: right;
+    padding: 10px 20px 0px 0px;
+}
+
+#account-menu span {
+    display: inline-block;
+    height: 41px;
+    /*padding: 0px 20px 0px 0px;*/
+    line-height: 21px;
+    background: #ccc;
+}
+
+#account-menu span span {
+    height: 41px;
+    padding: 8px 15px 0px 15px;
+    background: #ccc;
+    height: 0px;
+}
+
+#account-menu span span.active {
+    background: #333;
+    padding: 8px 15px 0px 15px;
+    height: 0px;
+}
+
+#account-menu li {
+    display: inline;
+    font: 21px/58px Georgia, "Times New Roman", Times, serif;
+    text-shadow: #4F5416 0px 1px 1px;
+    margin: 0px 5px 0px 5px;
+    line-height: 0px;
+}
+
+#account-menu li a.active {
+    /*text-shadow: #4F5416 0px 1px 0px;*/
+    /*background: #333;*/
+}
+
+#account-menu li a:hover {
+    color: #333;
+}
+
+/* Left */
+#account-menu li a {
+    height: 41px;
+    color: #fff;
+}
+#account-menu li.active a {
+    color: #faa;
+    height: 41px;
+}
+
+
