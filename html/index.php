@@ -46,7 +46,7 @@ if(count($items) > 0) :?>
 <h2>Most Recent Customer Listings</h2>
 <?php
 endif;
-foreach($items as $item) {
+foreach($items as $key => $item) {
     //error_log(print_r($item,true));
     $itemid = $item->getItemID();
     $itemtitle = $item->getTitle();
@@ -66,7 +66,11 @@ foreach($items as $item) {
     // Sorry. Need the last item to have a line.
     // Choosing not to use all the better ways.
     $borderbottom = '';
-    if($item == end(array_values($items)))
+    // error_log($key);
+    // error_log(count($items));
+
+    //if($item == end(array_values($items)))
+    if($key == (count($items)-1))
         $borderbottom = "style='border-bottom-width: 1px'";
 
     switch($itempriority) {

@@ -1,11 +1,11 @@
 <?php
 //set off all error for security purposes
-//ini_set("log_errors", 1);
-//ini_set("error_log", "/tmp/php-error.log");
+ini_set("log_errors", 1);
+ini_set("error_log", "/tmp/php-error.log");
 error_reporting( E_ALL );
 
 // SANDBOX Testing
-define( "USESANDBOX", false);
+define( "USESANDBOX", true);
 if(USESANDBOX) {
     define( "PAYPALURL", "https://www.sandbox.paypal.com/cgi-bin/webscr");
     define( "BUSINESS", "paypal-facilitator@zalaxy.com");

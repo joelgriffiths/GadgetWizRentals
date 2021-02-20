@@ -43,7 +43,7 @@ try {
 	exit;
 }
 
-error_log($_SESSION['username']." is LOGGED IN");
+error_log("aj/login.php ".$_SESSION['username']." is LOGGED IN");
 
 $result = array("success" => true, "userID" => $user->userID);
 

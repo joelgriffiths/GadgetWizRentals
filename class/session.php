@@ -1,4 +1,92 @@
 <?php
+// From since my old sessions stuff stopped working when I upgraded PHP
+// https://code.tutsplus.com/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839
+class MySQLSessionHandler implements SessionHandlerInterface
+{
+    private $connection;
+ 
+    public function __construct()
+    {
+        $this->connection = new mysqli("HOST_NAME","USERNAME","PASSWORD","DATABASENAME");
+    }
+ 
+    public function open($savePath, $sessionName)
+    {
+        if ($this->connection) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+ 
+    public function read($sessionId)
+    {
+        try {
+            $stmt = $this->connection->prepare("SELECT session_data FROM sessions WHERE session_id = ?");
+            $stmt->bind_param("s", $sessionId);
+            $stmt->execute();
+            $stmt->bind_result($sessionData);
+            $stmt->fetch();
+            $stmt->close();
+ 
+            return $sessionData ? $sessionData : '';
+        } catch (Exception $e) {
+            return '';
+        }
+    }
+ 
+    public function write($sessionId, $sessionData)
+    {
+        try {
+            $stmt = $this->connection->prepare("REPLACE INTO sessions(`session_id`, `created`, `session_data`) VALUES(?, ?, ?)");
+            $stmt->bind_param("sis", $sessionId, $time=time(), $sessionData);
+            $stmt->execute();
+            $stmt->close();
+ 
+            return TRUE;
+        } catch (Exception $e) {
+            return FALSE;
+        }
+    }
+ 
+    public function destroy($sessionId)
+    {
+        try {
+            $stmt = $this->connection->prepare("DELETE FROM sessions WHERE session_id = ?");
+            $stmt->bind_param("s", $sessionId);
+            $stmt->execute();
+            $stmt->close();
+ 
+            return TRUE;
+        } catch (Exception $e) {
+            return FALSE;
+        }
+    }
+ 
+    public function gc($maxlifetime)
+    {
+        $past = time() - $maxlifetime;
+ 
+        try {
+            $stmt = $this->connection->prepare("DELETE FROM sessions WHERE `created` < ?");
+            $stmt->bind_param("i", $past);
+            $stmt->execute();
+            $stmt->close();
+ 
+            return TRUE;
+        } catch (Exception $e) {
+            return FALSE;
+        }
+    }
+ 
+    public function close()
+    {
+        return TRUE;
+    }
+}
+
+/*
+<?php
 
 include_once 'config.php';
 
@@ -56,7 +144,7 @@ class Session {
 			$this->conn = new PDO( DB_DSN, DB_USERNAME, DB_PASSWORD );
 			$this->conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 } catch ( Exception $e ) {
-                        error_log('SESSSION EXCEPTION: '.$e->getMessage());
+                        error_log('SESSION EXCEPTION: '.$e->getMessage());
                         return false;
                 }
 		return true;
@@ -70,6 +158,7 @@ class Session {
 		try {
 			$sql = "SELECT data FROM sessions WHERE sessionid = :sessionid";
 	
+      error_log($sql);
 			if(!isset($this->read_stmt)) {
 				$read_stmt = $this->conn->prepare( $sql );
 			}
@@ -85,7 +174,7 @@ class Session {
 			$key = $this->getkey($sessionid);
 			$data = $this->decrypt($data, $key);
                 } catch ( Exception $e ) {
-                        error_log('SESSSION EXCEPTION: '.$e->getMessage());
+                        error_log('read SESSSION EXCEPTION: '.$e->getMessage());
                         return false;
                 }
 		return $data;
@@ -101,6 +190,7 @@ class Session {
 	
 			$sql = "REPLACE INTO sessions (sessionid, set_time, data, session_key) VALUES (:sessionid, :set_time, :data, :session_key)";
 
+      error_log($sql);
 			if(!isset($this->write_stmt)) {
 				$write_stmt = $this->conn->prepare( $sql );
 			}
@@ -165,6 +255,7 @@ class Session {
 		try {
 			$sql = "SELECT session_key FROM sessions WHERE sessionid = :sessionid";
 
+      error_log($sql);
 			if(!isset($this->key_stmt)) {
 				$key_stmt = $this->conn->prepare( $sql );
 			}
@@ -205,3 +296,4 @@ class Session {
 
 }
 	
+*/
