@@ -1,4 +1,6 @@
 <?php
+include_once 'config.php';
+
 // From since my old sessions stuff stopped working when I upgraded PHP
 // https://code.tutsplus.com/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839
 class MySQLSessionHandler implements SessionHandlerInterface
@@ -7,7 +9,16 @@ class MySQLSessionHandler implements SessionHandlerInterface
  
     public function __construct()
     {
-        $this->connection = new mysqli("HOST_NAME","USERNAME","PASSWORD","DATABASENAME");
+      try {
+        $this->connection = new PDO( DB_DSN, DB_USERNAME, DB_PASSWORD );
+        $this->connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                } catch ( Exception $e ) {
+                        error_log('SESSION EXCEPTION: '.$e->getMessage());
+                        return false;
+                }
+      return true;
+
+      //$this->connection = new mysqli("HOST_NAME","USERNAME","PASSWORD","DATABASENAME");
     }
  
     public function open($savePath, $sessionName)
