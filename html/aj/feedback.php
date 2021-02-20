@@ -6,8 +6,8 @@ include_once("user.php");
 include_once("Feedback.php");
 include_once("Reservation.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $user = new Users();
 $lic = $user->login_check();

@@ -5,8 +5,9 @@ include_once("user.php");
 include_once("image.php");
 include_once("userinfo.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
+
 
 $mypagetype='nosb';
 $boxstyles = array( 

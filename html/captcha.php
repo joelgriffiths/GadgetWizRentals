@@ -2,8 +2,8 @@
 //Start the session
 //session_start();
 include "session.php";
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 //Send a image
 create_image();

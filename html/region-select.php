@@ -4,8 +4,8 @@ include_once("user.php");
 include_once("Item.php");
 include_once("Regions.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $country = isset($_SESSION['country']) ?  $_SESSION['country'] : null;
 $city    = isset($_SESSION['city']) ?  $_SESSION['city'] : null;

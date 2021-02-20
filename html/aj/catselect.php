@@ -5,8 +5,8 @@ include_once("config.php"); //include the config
 include_once("CatSelector.php");
 include_once("User.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $user = new User();
 $lic = $user->login_check();

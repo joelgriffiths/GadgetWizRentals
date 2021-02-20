@@ -3,8 +3,8 @@
 include_once("config.php"); //include the config
 include_once("user.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $mypagetype='nosb';
 

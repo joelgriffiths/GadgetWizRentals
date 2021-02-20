@@ -9,8 +9,8 @@ include_once("userinfo.php");
 include_once("cGeocode.php");
 include_once("image.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $user = new Users();
 $lic = $user->login_check();

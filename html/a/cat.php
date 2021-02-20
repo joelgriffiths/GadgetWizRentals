@@ -1,7 +1,8 @@
 <?php
 include_once("config.php"); //include the config
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
+
 
 include_once "Category.php";
 include_once "CatSelector.php";

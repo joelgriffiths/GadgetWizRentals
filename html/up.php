@@ -2,8 +2,8 @@
 include_once("config.php"); //include the config
 include_once("user.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $position = isset($_GET['pos']) && is_numeric($_GET['pos']) ? $_GET['pos'] : 0;
 $itemid = isset($_GET['itemid']) && is_numeric($_GET['itemid']) ? $_GET['itemid'] : 0;

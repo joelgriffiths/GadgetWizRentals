@@ -13,8 +13,8 @@ include_once("config.php"); //include the config
 include_once("Regions.php");
 //include_once("geocode.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $user = new Users();
 $lic = $user->login_check();

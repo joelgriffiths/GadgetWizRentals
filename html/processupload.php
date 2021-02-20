@@ -2,15 +2,12 @@
 <div align="center"><a href="index.php">Sorry, JavaScript is required for uploads</a></div><!-- If javascript is disabled -->
 </noscript>
 <?php
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
-
 include_once("config.php"); //include the config
 include_once("user.php");
 include_once("image.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $user = new Users();
 $lic = $user->login_check();

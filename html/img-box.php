@@ -5,8 +5,8 @@ include_once("image.php");
 include_once("cImage.php");
 include_once("Item.php");
 
-$sess = new Session();
-$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
 
 $image = $_GET['img'] ?  $_GET['img'] : die();
 $img = new cImage($image);
