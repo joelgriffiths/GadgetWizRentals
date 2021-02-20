@@ -5,8 +5,10 @@ include_once "user.php";
 //include_once "validate.php";
 include_once "session.php";
 
-$sess = new Session();
-$sess->start_session('_s', false);
+//$sess = new Session();
+$sess = new MySQLSessionHandler();
+//$sess->start_session('_s', false);
+session_start();
 
 //error_log(print_r($_POST,true));
 $user = new Users($_POST);

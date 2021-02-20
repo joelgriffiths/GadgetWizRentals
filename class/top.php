@@ -1,8 +1,11 @@
 <?php 
 include_once "config.php";
 include_once 'session.php';
-$sess = new Session();
-$sess->start_session('_s', false);
+//$sess = new Session();
+//$sess->start_session('_s', false);
+$sess = new MySQLSessionHandler();
+session_start();
+
 
 $active[basename($_SERVER['PHP_SELF'])] = 'class="active"';;
 $thistextpage = basename($_SERVER['PHP_SELF']);
