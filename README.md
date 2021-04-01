@@ -19,7 +19,7 @@ Fiddle with things for many hours until they work
 # Apology
 Since I developed this website quickly (a few weeks), I took a number of shortcuts in the development. Seemed to be little use in writing perfect code if nobody was going to use the website. So please excuse any of those issues.
 
-On top of that, I haven't really touched the code in a half dozen years, so it's out of date and it could be buggy for newer versions of PHP. I've done a quick pass over the code to make sure it works with newer versions of PHP though. so you shouldn't experience too many problems.
+On top of that, I haven't really touched the code in a half dozen years, so it's out of date. I've done a quick pass over the code to make sure it works with newer versions of PHP though, so you shouldn't experience too many problems.
 
 It's a good starting point for a rental website. 
 
