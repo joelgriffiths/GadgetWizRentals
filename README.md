@@ -1,8 +1,10 @@
 ### Peer to peer rental website written in PHP
 
-I wrote this website over the course of a few months several years ago.
+I wrote this website 7 years ago. It took me about three months, after work, to complete it. 
 
-It's a peer to peer rental website. It never gained much traction.
+It's a peer to peer rental website.
+
+Unfortuantely, even after spending a ton of money promoting it, it never gained much traction. I realize now that I could have 
 
 I was going to change the website to host rental pages for rental companies, but I've been too busy working on new technologies, I don't think I'm ever going to get back to this project.
 
@@ -25,3 +27,6 @@ It's a good starting point for a rental website.
 
 # Important
 There is some code in here that doesn't belong to me. The MIT copyright does not apply to that. Particularly AJ.
+
+### Contact
+My website is https://joelgriffiths.com if you're interested in contacting me.
