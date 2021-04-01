@@ -22,3 +22,6 @@ Since I developed this website quickly (a few weeks), I took a number of shortcu
 On top of that, I haven't really touched the code in a half dozen years, so it's out of date and buggy.
 
 It's a good starting point for a rental website. 
+
+# Important
+There is some code in here that doesn't belong to me. The MIT copyright does not apply to that. Particularly AJ.
