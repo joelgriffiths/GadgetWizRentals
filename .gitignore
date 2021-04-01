@@ -3,4 +3,4 @@
 **.php5
 **.bak
 /tmp/
-/config/*
+/config/settings.php
