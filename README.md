@@ -4,9 +4,9 @@ I wrote this website 7 years ago. It took me about three months, after work, to 
 
 It's a peer to peer rental website.
 
-Unfortuantely, even after spending a ton of money promoting it, it never gained much traction. I realize now that I could have 
+Unfortuantely, even after spending a ton of money promoting it, it never gained much traction. I realize now that I could have continued to try different things, but that was a life-lesson I hadn't learned yet. 
 
-I was going to change the website to host rental pages for rental companies, but I've been too busy working on new technologies, I don't think I'm ever going to get back to this project.
+I was going to change the website to host rental pages for rental companies, but I've been too busy working on new technologies, I might come back to it some day, but here is the code for anybody interesting in adapting it for their own purpose.
 
 This is under the MIT license, so do what you want with the code. If you use it, it would be nice if you dropped me an email (not required).
 
